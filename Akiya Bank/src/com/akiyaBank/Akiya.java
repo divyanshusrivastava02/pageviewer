@@ -3,7 +3,7 @@ package com.akiyaBank;
 import android.graphics.Bitmap;
 
 /**
- * Represents a Akiya database values storage
+ * Represents a Akiya database values storage divyanshu
  */
 
 public class Akiya 
