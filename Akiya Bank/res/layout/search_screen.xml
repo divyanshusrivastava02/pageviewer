@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/custom_main_background" >
+
+    <RelativeLayout
+        android:id="@+id/relative_layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/relative_layout1"
+        android:layout_margin="10dip"
+        android:background="@drawable/white_view"
+        android:padding="10dip" >
+
+        <RelativeLayout
+            android:id="@+id/relative_layout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/multiAutoCompleteTextView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/sets_image"
+                android:hint="@string/please_enter_here" >
+
+                <requestFocus />
+            </MultiAutoCompleteTextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout4"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/relative_layout3" >
+
+            <Button
+                android:id="@+id/searchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="33dp"
+                android:background="@drawable/search_btn_320by480"
+                android:text="@string/search"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

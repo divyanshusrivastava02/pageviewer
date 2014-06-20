@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center" >
+
+    <AbsoluteLayout
+        android:id="@+id/chugoku_map_absoluteLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/h_chugoku_selected_320by480" >
+
+        <Button
+            android:id="@+id/btn_back_Chugoku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="14dp"
+            android:layout_y="13dp"
+            android:background="@drawable/back_btn_320by480"
+            android:text="@string/back_jap" />
+
+        <Button
+            android:id="@+id/btn_tottori_ken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btn_320by480"
+            android:text="1"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_shimane_ken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btn_320by480"
+            android:text="2"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_okayama_ken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btn_320by480"
+            android:text="3"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_hiroshima_ken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btn_320by480"
+            android:text="4"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_yamaguchi_ken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btn_320by480"
+            android:text="5"
+            android:visibility="invisible" />
+    </AbsoluteLayout>
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center" >
+
+    <AbsoluteLayout
+        android:id="@+id/kyushu_map_absoluteLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/j_kyushu_selected_320by480" >
+
+        <Button
+            android:id="@+id/btn_back_Kyushu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="14dp"
+            android:layout_y="13dp"
+            android:background="@drawable/back_btn_320by480"
+            android:text="@string/back_jap" />
+
+        <Button
+            android:id="@+id/btn_fukuoka_ken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btn_320by480"
+            android:text="1"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_saga_ken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btn_320by480"
+            android:text="2"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_nagasaki_ken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btn_320by480"
+            android:text="3"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_oita_ken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btn_320by480"
+            android:text="4"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_kumamota_ken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btn_320by480"
+            android:text="5"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_miyazaki_ken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btn_320by480"
+            android:text="6"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_kagoshima_ken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btn_320by480"
+            android:text="7"
+            android:visibility="invisible" />
+    </AbsoluteLayout>
+
+</RelativeLayout>

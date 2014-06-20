@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, AkiyaBankByMeActivity!</string>
+    <string name="app_name">空き家バンク</string>
+
+    <color name="white_color">#FFFFFF</color>
+    <color name="black_color">#000000</color>
+    <color name="light_blue_color">#35AAE0</color>
+
+    <string name="property_list_japanese">プロパティリスト</string>
+    <string name="back_jap">戻る</string>
+    <string name="description_jap">説明</string>
+    <string name="Specifications_jap">仕様：</string>
+    <string name="contactUs_jap">お問い合わせ</string>
+    <string name="Description_content_jap">説明内容</string>
+    <string name="no_vacant_houses">プロパティが見つかりません。</string>
+    <string name="enter_valid_keyword">有効なキーワードを入力してください</string>
+    <string name="please_wait">しばらくお待ちください</string>
+    <color name="green">#8CC300</color>
+    <string name="by_keyword">キーワードで</string>
+    <string name="by_address">アドレスによる</string>
+    <string name="unableToFetchContent_jp">コンテンツを....取得できません、もう一度試してください。</string>
+    <string name="please_enter_here">ここで入力してください。....</string>
+    <string name="search">検索</string>
+    <string name="saved_properties">保存されたプロパティ</string>
+    <string name="Property_added_successfully">プロパティが正常に追加</string>
+    <string name="This_property_is_already_added..">このプロパティは、既に追加されます。..</string>
+    <string name="Property_not_Found">プロパティーが見つかりません</string>
+
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.akiyaBank"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="7" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:icon="@drawable/akiya_icon"
+        android:label="@string/app_name" >
+        <activity
+            android:label="@string/app_name"
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".JapanMap"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Tohoku_Map"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Koshin_etsu_Map"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Kanto_Map"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Kinki_Map"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Chugoku_Map"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Shikoku_Map"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Kyushu_Map"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Tokai_Map"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Hokuriku_Map"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Hokkaido_Map"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Okinawa_Map"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PropertyList"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PropertyInfo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SignUp"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SearchScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SearchByKeyword"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SearchByAddress"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".OpenImage"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SearchByKeyword"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SearchResultScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".BookMarkScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CustomAdapter"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DataHelper"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

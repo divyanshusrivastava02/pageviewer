@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/property_list_upper_part"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/property_list_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="3dip"
+            android:text="@string/back_jap"
+            android:background="@drawable/back_btn_320by480" />
+
+        <TextView
+            android:id="@+id/property_list_heading"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:gravity="center"
+            android:text="@string/property_list_japanese"
+            android:textColor="@color/white_color"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/property_list_middle_part"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/property_list_upper_part"
+        android:layout_margin="5dip"
+        android:background="@drawable/white_background" >
+
+        <ListView
+            android:id="@+id/property_list_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="3dip"
+            android:background="#00000000"
+            android:cacheColorHint="#00000000" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dip" >
+
+    <RelativeLayout
+        android:id="@+id/property_info_upper_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dip" >
+
+        <Button
+            android:id="@+id/property_info_home_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="3dip"
+            android:background="@drawable/home_320by480" />
+
+        <Button
+            android:id="@+id/property_info_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="43dip"
+            android:layout_marginRight="5dip"
+            android:layout_toRightOf="@+id/property_info_home_button"
+            android:gravity="center"
+            android:text="@string/back_jap" />
+
+        <TextView
+            android:id="@+id/property_info_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/property_info_back_button"
+            android:text="Title"
+            android:textColor="@color/black_color"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/property_info_upper_layout"
+        android:layout_marginTop="5dip"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:id="@+id/property_info_middle_part"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:background="@drawable/white_background"
+            android:padding="5dip" >
+
+            <RelativeLayout
+                android:id="@+id/property_info_main_image_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:gravity="center_horizontal" >
+
+                <ImageView
+                    android:id="@+id/property_info_main_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dip"
+                    android:visibility="invisible" />
+
+                <ProgressBar
+                    android:id="@+id/property_info_main_image_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/property_info_description_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/property_info_main_image_layout"
+                android:layout_marginTop="5dip" >
+
+                <TextView
+                    android:id="@+id/property_info_description_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/description_jap"
+                    android:textColor="@color/light_blue_color"
+                    android:textSize="20dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/property_info_description_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/property_info_description_title"
+                    android:text="@string/Description_content_jap"
+                    android:textColor="@color/black_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/property_info_interior_image_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/property_info_description_layout"
+                android:layout_marginTop="5dip"
+                android:gravity="center_horizontal" >
+
+                <Gallery
+                    android:id="@+id/property_info_gallery"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+                <!--
+                <RelativeLayout
+                    android:id="@+id/property_pic1_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="3dip" >
+
+                    <ImageView
+                        android:id="@+id/property_info_pic1"
+                        android:layout_width="150dip"
+                        android:layout_height="100dip"
+                        android:visibility="gone" />
+
+                    <ProgressBar
+                        android:id="@+id/property_info_pic1_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="3dip" />
+
+                    <TextView
+                        android:id="@+id/property_info_pic1_text"
+                        android:layout_width="150dip"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/property_info_pic1"
+                        android:inputType="textMultiLine" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/property_pic2_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/property_pic1_layout" >
+
+                    <ImageView
+                        android:id="@+id/property_info_pic2"
+                        android:layout_width="150dip"
+                        android:layout_height="100dip"
+                        android:visibility="gone" />
+
+                    <ProgressBar
+                        android:id="@+id/property_info_pic2_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/property_info_pic1_spinner" />
+
+                    <TextView
+                        android:id="@+id/property_info_pic2_text"
+                        android:layout_width="150dip"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/property_info_pic2"
+                        android:inputType="textMultiLine" />
+                </RelativeLayout>
+                -->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/property_info_specification_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/property_info_interior_image_layout"
+                android:layout_marginTop="5dip" >
+
+                <TextView
+                    android:id="@+id/property_info_specification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/Specifications_jap"
+                    android:textColor="@color/light_blue_color"
+                    android:textSize="20dip"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/property_info_contactus_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/contactUs_jap"
+                    android:textColor="@color/black_color" />
+
+                <WebView
+                    android:id="@+id/property_info_specification_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/property_info_contactus_button" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

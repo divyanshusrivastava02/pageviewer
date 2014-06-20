@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center" >
+
+    <AbsoluteLayout
+        android:id="@+id/okinawa_map_absoluteLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/okinawa_new" >
+
+        <Button
+            android:id="@+id/btn_back_Okinawa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="14dp"
+            android:layout_y="13dp"
+            android:background="@drawable/back_btn_320by480"
+            android:text="@string/back_jap" />
+
+        <Button
+            android:id="@+id/btn_okinawa_ken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btn_320by480"
+            android:visibility="invisible" />
+    </AbsoluteLayout>
+
+</RelativeLayout>
